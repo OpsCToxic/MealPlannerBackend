@@ -15,6 +15,7 @@ builder.Services.AddSingleton<IMongoClient>(s => new MongoClient
 builder.Services.AddScoped<IMealService, MealService>();
 // Inside ConfigureServices method in Startup.cs
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IMealRequestService, MealRequestService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -14,8 +14,7 @@ namespace MealPlanBackend.Models
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string MealId { get; set; } = String.Empty;
-        [BsonElement("userId")]
-        public string UserId { get; set; } = String.Empty;
+       
         [BsonElement("date")]
         public DateTime Date { get; set; }
         [BsonElement("mealType")]

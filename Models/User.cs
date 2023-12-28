@@ -3,6 +3,7 @@ using MongoDB.Bson;
 
 namespace MealPlanBackend.Models
 {
+    [BsonIgnoreExtraElements]
     public class User
     {
         [BsonId]
@@ -42,6 +43,11 @@ namespace MealPlanBackend.Models
         // Text that describes food allergies of user
         [BsonElement("allergies")]
         public string Allergies { get; set; } = String.Empty;
+        [BsonElement("hoursActivity")]
+        public int HoursOfFitness { get; set; }
+        [BsonElement("activites")]
+        public string Activities { get; set; } = String.Empty;
+
     }
 
 }
